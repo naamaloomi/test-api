@@ -7,5 +7,6 @@ namespace TestApi.Models
 {
     public class Asset
     {
+        public string Type { get; set; }
     }
 }

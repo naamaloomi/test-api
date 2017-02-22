@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace TestApi.Models
 {
-    public class IAssetDao
+    public interface IAssetDao
     {
+        Asset getAsset(string serialNumber);
+        IEnumerable<string> getAll();
+        void setAsset(string serialNumber, Asset asset);
     }
 }
